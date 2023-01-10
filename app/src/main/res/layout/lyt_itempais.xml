@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgBandera"
+                android:layout_width="123dp"
+                android:layout_height="61dp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/txtTituloCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgBandera"
+                android:text="Nombre del pais: "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtCapital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTituloCountry"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgBandera"
+                android:text="Capital: "
+                android:textAlignment="viewStart"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPrefio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtCapital"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgBandera"
+                android:text="Prefijo del pais: "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/txtInfoPais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgBandera"
+                android:layout_marginLeft="5dp"
+                android:text="Informacion del pais: "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
